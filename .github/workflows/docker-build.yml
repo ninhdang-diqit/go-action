@@ -48,7 +48,3 @@ jobs:
       - name: View Container Logs
         if: always()
         run: docker compose logs
-
-      - name: Stop Container
-        if: always()
-        run: docker compose down
