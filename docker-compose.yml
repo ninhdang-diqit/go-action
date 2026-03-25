@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: go-docker-app:local
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    container_name: go_app_container
